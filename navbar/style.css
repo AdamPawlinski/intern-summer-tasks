@@ -1,0 +1,203 @@
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color:  #cacaca;
+  color: #FFF;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+      justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+}
+
+li {
+  margin: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 .5rem;
+}
+
+a {
+  text-decoration: none;
+  color:  #FFF;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+      justify-content: space-between;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  background-color: rgb(37,45,117);  
+  min-height: 3rem;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  opacity: .8;
+  position: fixed;
+  width: 100%;
+} 
+
+.head-nav {  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  position: relative; 
+  width: 100%; 
+}
+
+.contact {
+  margin-right: 5rem;
+  padding: 0 .5rem;
+}
+
+.head-nav ul > li:hover,
+.contact:hover {
+  background-color: rgb(51,162,241);
+  height: 3rem;
+}
+
+.nav-list,
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center;
+  min-width: 5rem;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+  -webkit-box-pack: center;  
+      -ms-flex-pack: center;  
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;     
+  line-height: 1.5rem; 
+  font-family: sans-serif;     
+}
+
+/* dropdown menu  */
+
+.dropdown {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown:hover {
+  background-color: rgb(51,162,241);
+}
+
+/* dropdown menu showing after hover  */
+
+.dropdown:hover .dropdown-container{
+  display: block;
+  border: none;
+}
+
+.dropdown-container {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  display: none;
+  position: absolute;
+  min-width: 5rem;
+  top: 3rem;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255,255,255,.85);
+  color: rgb(0,0,0);
+  text-align: center;
+}
+
+.dropdown-container .link {
+  color: rgb(0,0,0); 
+  padding: .5rem 0;  
+}
+
+.dropdown-container .nav-list {
+  padding: .5rem 0;  
+  height: 3rem;
+}
+
+/* dropdown menu layout after hover  */
+
+.dropdown-container .nav-list:hover,
+.dropdown-container .link:hover, 
+.dropdown:hover .dropdown-btn {  
+  color: #FFF;  
+  background-color: rgb(51,162,241);
+  margin: 0;    
+}
+
+/* dropdown button */
+
+.dropdown-btn {
+  margin: 0; 
+  color: #FFF;
+  background-color: rgb(37,45,117);  
+  border: none;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  min-height: 3rem; 
+}
+
+.dropdown-btn:hover{
+  background-color: rgb(51,162,241);
+}  
